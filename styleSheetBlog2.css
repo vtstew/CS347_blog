@@ -1,12 +1,8 @@
-h1 {
-    color:blueviolet
-}
-
 table, th, td {
     border:1px solid black;
   }
 
 #top {
     font-weight: bold;
-    text-transform:uppercase;
+    text-transform: uppercase;
 }
