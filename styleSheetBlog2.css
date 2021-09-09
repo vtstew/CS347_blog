@@ -1,3 +1,6 @@
+p {
+    width: 40mm;
+}
 table, th, td {
     border:1px solid black;
   }
