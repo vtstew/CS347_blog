@@ -1,3 +1,7 @@
+body {
+    background-color: rgb(124, 161, 230);
+  }
+
 p {
     display: block;
     background-color:cornsilk;
