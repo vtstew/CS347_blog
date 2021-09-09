@@ -5,8 +5,8 @@ body {
 p {
     display: block;
     background-color:cornsilk;
-    width: 60px;
-    height: 30px;
+    width: 60%;
+    height: 30%;
     border: 5px double black;
     border-radius: 5px;
 }
