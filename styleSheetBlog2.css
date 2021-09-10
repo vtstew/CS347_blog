@@ -1,7 +1,7 @@
 h1, h2{
-    color:rgb(220, 60, 60);
+    color:whitesmoke;
     display: block;
-    background-color:rgb(243, 187, 44);
+    background-color:rgb(121, 156, 137);
     width: fit-content;
     border-bottom: 3px double black;
 }
