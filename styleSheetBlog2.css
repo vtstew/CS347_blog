@@ -6,8 +6,8 @@ body {
 p {
     width: 70%;
 }
-#hidden {
-    visibility: hidden;
+h5 {
+    display: none;
 }
 
 table, th, td {
