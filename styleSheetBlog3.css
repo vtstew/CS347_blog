@@ -16,3 +16,15 @@
 figure { -webkit-transform-origin: 50% 50% 0; }
 .front { -webkit-transform: translateZ(150px); }
 .back { -webkit-transform: rotateY(180deg) translateZ(150px);}
+
+.top { -webkit-transform: rotateX(90deg) translateZ(150px); }
+.bottom { -webkit-transform: rotateX(-90deg) translateZ(150px); }
+.left { -webkit-transform: rotateY(-90deg) translateZ(150px); }
+.right { -webkit-transform: rotateY(90deg) translateZ(150px); }
+
+@-webkit-keyframes rotate {
+    0% { -webkit-transform: rotateY(0); }
+    100% { -webkit-transform: rotateY(360deg); }
+  }
+
+  .cube { -webkit-animation: rotate 10s infinite linear; }
