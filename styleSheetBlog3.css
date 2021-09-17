@@ -2,6 +2,7 @@
     width: 300px; height: 300px;
     -webkit-perspective: 1600px;
     -webkit-perspective-origin: 50% -240px;
+    align-items: center;
   }
 
   figure {
