@@ -28,3 +28,14 @@ figure { -webkit-transform-origin: 50% 50% 0; }
   }
 
   .cube { -webkit-animation: rotate 10s infinite linear; }
+
+  figure:before, figure:after {
+    content: ""; display: block; position: absolute;
+    width: 100%; height: 100%; opacity: 0;
+  }
+  figure:before {
+    background: -webkit-radial-gradient(top left, rgba(0, 0, 0, 0.5), #000000);
+  }
+  figure:after {
+    background: -webkit-radial-gradient(top right, rgba(0, 0, 0, 0.5), #000000);
+  }
