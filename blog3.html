@@ -6,19 +6,31 @@
     </head>
     <body>
         <h1>Creating 3-D graphic with CSS</h1>
-        <p>
-            This week I chose to research about creating 3-D graphics using css and html. 
+        <p id="par">
+            This week I chose to research how to create 3D graphics using CSS and HTML. There are many other ways to make 3D graphics and each of them has their advantages and disadvantages. 
+            Some advantages of CSS are that it does not have the need for images and is able to hook directly into the GPU for graphic acceleration. It also does not require plug-ins. 
+            A disadvantage is that there is inconsistency in display from browser to browser. 
+        </p>
+        <p id="par">
+            On this page there is a rotating 3D box that I created. This uses CSS transitions in order to move the image smoothly and effectively.
+            Different browsers support different levels of transitions. Because of this I used the prefix -webkit because this is what is used in Google Chrome(the browser I typically use).
+            However, I also added the standard declaration, in order to take care of other browsers as well.
         </p>
         <div class="stage">
             <div class="cube">
               <figure class="back"></figure>
               <figure class="top"></figure>
               <figure class="bottom"></figure>
-              <figure class="left"><p>Here is code that makes the box turn</p><img src="blog3ImgRotate.JPG" height="100px" width="300px"></figure>
+              <figure class="left"><p>Here is code that makes the box turn:</p><img src="blog3ImgRotate.JPG" height="150px" width="300px"></figure>
               <figure class="right"></figure>
               <figure class="front"></figure>
             </div>
           </div>
+        <p id="res">
+            Resources:
+        </p>
+        <a href="https://www.creativebloq.com/3d/how-create-impressive-3d-graphics-css3-21410672">https://www.creativebloq.com/3d/how-create-impressive-3d-graphics-css3-21410672</a><br>
+        <a href="https://askinglot.com/what-is-webkit-transition-in-css">https://askinglot.com/what-is-webkit-transition-in-css</a>    
     </body>
     <footer>
         <br>
