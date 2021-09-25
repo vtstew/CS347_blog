@@ -1,56 +1,150 @@
-.view {
-    width: 300px;
-    height: 200px;
-    margin: 10px;
-    float: left;
-    border: 10px solid #fff;
-    overflow: hidden;
-    position: relative;
+body {
+    background-color: gray;
+    color: black;
+    display: flex;
+    flex-direction: column;
     text-align: center;
-    box-shadow: 1px 1px 2px #e6e6e6;
-    cursor: default;
-    background: #fff url(../images/bgimg.jpg) no-repeat center center
+    align-items: center;
+
 }
-.view .mask, .view .content {
-    width: 300px;
-    height: 200px;
+.whole {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
+    background-color: white;
+    border-radius: 20px;
+    border-style: double;
+    border-width: 5px;
+}
+.para {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+}
+
+.addition {
+    margin-left: 35%;
+    margin-top: 10%;
+    height: 300px;
+}
+
+.slideshow {
+    position: center;
+    margin: 0 auto;
+    padding-top: 50px;
+    height: 250px;
+    box-sizing: border-box;
+}
+
+.content {
+    margin: auto;
+    width: 190px;
+    perspective: 1000px;
+    position: relative;
+    padding-top: 8px;
+}
+
+.content-carrousel {
+    padding-left: 40px;
+
+    /* This helps to rotate the
+    photo div with respest to
+    axis of an another circle */
+    width: 100%;
     position: absolute;
+    float: right;
+    animation: rotar 25s infinite linear;
+    transform-style: preserve-3d;
+}
+
+.content-carrousel:hover {
+
+    /* This is a hover effect.
+    when the mouse will reach
+    on the photo, the photo
+    will stop moving */
+    animation-play-state: paused;
+    cursor: pointer;
+}
+
+.content-carrousel figure {
+
+    /* width of the full image div*/
+    width: 100%;
+
+    /* height of the full image div*/
+    height: 120px;
+    border: 1px solid #4d444d;
     overflow: hidden;
-    top: 0;
-    left: 0
+    position: absolute;
 }
-.view img {
-    display: block;
-    position: relative
+
+/* The calculation part starts for the angle.
+first, take the number of photos and then divide
+by 360 and write it in the position of degree */
+
+.content-carrousel figure:nth-child(1) {
+    transform: rotateY(0deg) translateZ(300px);
 }
-.view h2 {
-    text-transform: uppercase;
-    color: #fff;
-    text-align: center;
-    position: relative;
-    font-size: 17px;
-    padding: 10px;
-    background: rgba(0, 0, 0, 0.8);
-    margin: 20px 0 0 0
+
+.content-carrousel figure:nth-child(2) {
+    transform: rotateY(60deg) translateZ(300px);
 }
-.view p {
-    font-family: Georgia, serif;
-    font-style: italic;
-    font-size: 12px;
-    position: relative;
-    color: #fff;
-    padding: 10px 20px 20px;
-    text-align: center
+
+.content-carrousel figure:nth-child(3) {
+    transform: rotateY(120deg) translateZ(300px);
 }
-.view a.info {
-    display: inline-block;
-    text-decoration: none;
-    padding: 7px 14px;
-    background: #000;
-    color: #fff;
-    text-transform: uppercase;
-    box-shadow: 0 0 1px #000
+
+.content-carrousel figure:nth-child(4) {
+    transform: rotateY(180deg) translateZ(300px);
 }
-.view a.info:hover {
-    box-shadow: 0 0 5px #000
+
+.content-carrousel figure:nth-child(5) {
+    transform: rotateY(240deg) translateZ(300px);
+}
+
+.content-carrousel figure:nth-child(6) {
+    transform: rotateY(300deg) translateZ(300px);
+}
+
+.content-carrousel figure:nth-child(7) {
+    transform: rotateY(360deg) translateZ(300px);
+}
+
+.slideshow {
+    position: absolute;
+    box-shadow: 0px 0pz 20px 0px #000;
+    border-radius: 2px;
+}
+
+.content-carrousel img {
+    image-rendering: auto;
+
+    /* The photo will move
+    with this velocity */
+    transition: all 300ms;
+     
+    /* width of the photo */
+    width: 100%;
+     
+    /* height of the photo */
+    height: 100%;
+}
+
+.content-carrousel img:hover {
+    transform: scale(1.1);
+    transition: all 300ms;
+}
+
+@keyframes rotar {
+    from {
+        transform: rotateY(0deg);
+    }
+
+    to {
+        transform: rotateY(360deg);
+    }
 }
